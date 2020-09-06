@@ -18,6 +18,10 @@ function Sheep:new(name, age, fluffiness)
   self.fluffiness = fluffiness
 end
 
+function Sheep:make_noise()
+  print(self.noise)
+end
+
 Cow = Animal:extend("Cow")
 function Cow:new()
   Animal:super().new(self, "Cowcow", 12)
@@ -28,5 +32,6 @@ local myAnimal = Animal("Anime girl", 999)
 local mySheep = Sheep("Kawaii sheep", 1, 12)
 local mySecondSheep = Sheep("Kawaii sheep two", 2, 24)
 local myCow = Cow()
+mySheep:make_noise()
 
 ```
