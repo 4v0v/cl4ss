@@ -1,8 +1,7 @@
 # class
 Small class module for lua
 
-```lua 
-
+```lua
 Class = require("clas")
 
 Animal = Class:extend("Animal")
@@ -49,5 +48,4 @@ my_walking_animal:make_noise()
 my_sheep:make_noise()
 my_second_sheep:make_noise()
 my_cow:tell_number_of_legs()
-
 ```
