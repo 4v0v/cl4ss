@@ -5,8 +5,8 @@ function Class:extend(name)
 		obj.super   = self
 		obj.class   = function() return name or "Default" end
 		obj.new     = function() end
-		obj.__call  = self.__call
 		obj.__index = obj
+		obj.__call  = self.__call
 	return setmetatable(obj, self)
 end
 function Class:__index(v) return Class[v] end
