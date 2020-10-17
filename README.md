@@ -1,4 +1,4 @@
-# class
+# cl4ss
 Small class module for lua
 
 ```lua
